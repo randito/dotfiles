@@ -22,7 +22,7 @@
 
 [alias]
   ; up = pull --rebase
-  ; pr = pull --rebase
+  pr = pull --rebase
   p = pull
   graph = log --all --graph --decorate --oneline
   ls = log --decorate
