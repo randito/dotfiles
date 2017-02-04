@@ -11,10 +11,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo pmset -a standbydelay 60
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Ivy"
-sudo scutil --set HostName "Ivy"
-sudo scutil --set LocalHostName "Ivy"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Ivy"
+# sudo scutil --set ComputerName "Ivy"
+# sudo scutil --set HostName "Ivy"
+# sudo scutil --set LocalHostName "Ivy"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Ivy"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
