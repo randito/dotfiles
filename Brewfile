@@ -16,8 +16,8 @@ brew 'libtool'
 brew 'openssl'
 brew 'pcre'
 brew 'pkg-config'
-brew 'rbenv'
-brew 'rbenv-gem-rehash'
+/* brew 'rbenv' */
+/* brew 'rbenv-gem-rehash' */
 brew 'readline'
 brew 'ruby-build'
 brew 'the_silver_searcher'

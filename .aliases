@@ -17,7 +17,7 @@ alias gf='git ls-files | grep'
 alias gg='git grep'
 
 # Coding shortcuts
-alias ggems='cd $(rbenv prefix)/lib/ruby/gems/2.1.0/gems'
+# alias ggems='cd $(rbenv prefix)/lib/ruby/gems/2.1.0/gems'
 alias myctags="ctags -R --exclude='*min.js' --exclude='*ckeditor*' --exclude='*jquery-ui*' --exclude='*jquerycontextMenu*' -f tags"
 
  #Detect which `ls` flavor is in use
