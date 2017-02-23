@@ -21,7 +21,6 @@
   log = true
 
 [alias]
-  ; up = pull --rebase
   pr = pull --rebase
   p = pull
   graph = log --all --graph --decorate --oneline
@@ -52,6 +51,7 @@
   sl = stash list
   sa = stash apply
   ss = stash save
+	up = !"git remote update -p; git merge --ff-only @{u}"
   who = shortlog -n -s --no-merges
   # Remove submodules
   # From http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule
