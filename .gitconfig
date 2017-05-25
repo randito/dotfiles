@@ -54,6 +54,7 @@
   ss = stash save
 	up = !"git remote update -p; git merge --ff-only @{u}"
   who = shortlog -n -s --no-merges
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
   # Remove submodules
   # From http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule
   rmsub = "!f(){ git rm --cached \"$1\";rm -r \"$1\";git config -f .gitmodules --remove-section \"submodule.$1\";git config -f .git/config --remove-section \"submodule.$1\";git add .gitmodules; }; f"
