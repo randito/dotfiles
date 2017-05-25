@@ -36,6 +36,7 @@
   ci = commit -v
   co = checkout
   com = checkout master
+  cod = checkout develop
   rh = reset HEAD
   rhh = reset HEAD --hard
   rhs = reset HEAD --soft
