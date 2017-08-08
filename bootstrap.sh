@@ -20,3 +20,5 @@ else
 	fi
 fi
 unset doIt
+echo ""
+echo "** Run update in ~/.vim"
