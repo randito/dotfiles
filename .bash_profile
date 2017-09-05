@@ -12,6 +12,9 @@ shopt -s nocaseglob
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
+# Multiline commands show up as one line on history
+shopt -s cmdhist
+
 # Vim bindings
 set -o vi
 
