@@ -1,6 +1,5 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
 brew 'autoconf'
 brew 'bash'
 brew 'coreutils'
@@ -16,8 +15,6 @@ brew 'libtool'
 brew 'openssl'
 brew 'pcre'
 brew 'pkg-config'
-/* brew 'rbenv' */
-/* brew 'rbenv-gem-rehash' */
 brew 'readline'
 brew 'ruby-build'
 brew 'the_silver_searcher'
