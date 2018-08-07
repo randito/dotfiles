@@ -5,6 +5,7 @@ coverage
 perf
 spec/vcr
 vendor/
+node_modules/
 public/generated/
 doc
 tags
