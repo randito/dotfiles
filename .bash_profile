@@ -46,6 +46,10 @@ export PATH="/usr/local/bin:$PATH"
 # RVM support
 source ~/.profile
 
+# Rust support
+# See https://doc.rust-lang.org/book/ch01-01-installation.html
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # # Rbenv
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
