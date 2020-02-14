@@ -38,8 +38,8 @@
   com = checkout master
   cod = checkout develop
   rh = reset HEAD
-  rhh = reset HEAD --hard
-  rhs = reset HEAD --soft
+  # rhh = reset HEAD --hard
+  # rhs = reset HEAD --soft
   wc = whatchanged -p --abbrev-commit --pretty=medium
   wcb = whatchanged -p --abbrev-commit --pretty=medium master..
   br = branch
@@ -59,6 +59,7 @@
   # From http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule
   rmsub = "!f(){ git rm --cached \"$1\";rm -r \"$1\";git config -f .gitmodules --remove-section \"submodule.$1\";git config -f .git/config --remove-section \"submodule.$1\";git add .gitmodules; }; f"
   pullsub= !"git submodule foreach git pull origin master"
+  pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
   # Finds 
 
 
