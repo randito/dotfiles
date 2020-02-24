@@ -43,9 +43,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Brew
 export PATH="/usr/local/bin:$PATH"
 
-# RVM support
-source ~/.profile
-
 # Rust support
 # See https://doc.rust-lang.org/book/ch01-01-installation.html
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -56,3 +53,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# RVM support (needs to be last)
+source ~/.profile
+
