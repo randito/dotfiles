@@ -19,10 +19,6 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:fg:bg:history:"
 export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
-# Save Erlang command history
-# https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
-export ERL_AFLAGS="-kernel shell_history enabled"
-
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
