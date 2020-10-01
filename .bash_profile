@@ -57,3 +57,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # RVM support (needs to be last)
 source ~/.profile
 
+export PATH="/usr/local/sbin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
