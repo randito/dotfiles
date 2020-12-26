@@ -57,6 +57,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # RVM support (needs to be last)
 source ~/.profile
 
+# Add asdf support.  Add ~/.local/bin for python packages
+. $HOME/.asdf/asdf.sh
+export PATH="~/.local/bin:$PATH"
+
 export PATH="/usr/local/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
