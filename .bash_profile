@@ -40,6 +40,9 @@ source ~/.git-completion.bash
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
 
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # Brew
 export PATH="/usr/local/bin:$PATH"
 
@@ -53,6 +56,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+complete -C /usr/local/bin/terraform terraform
 
 # RVM support (needs to be last)
 source ~/.profile
